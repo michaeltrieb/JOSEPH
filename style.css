@@ -82,7 +82,7 @@ h6 					{ font-weight:bold; /* This helps to identify headings at the initial bu
 
 
 h1.logo {
-    color: rgba(0,250,0, 0.9);
+    color: rgba(255,250,0, 0.9);
     margin: 0 auto;
     padding: .3em 0;
     text-align: center;
@@ -156,4 +156,9 @@ a {
     text-align: center;
     margin: 10px auto;
 
+}
+#map {
+	width: 700px;
+    display: block;
+    margin: 0 auto;
 }
