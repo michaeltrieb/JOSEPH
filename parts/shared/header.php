@@ -1,6 +1,6 @@
 <header>
     <div id="main">
-        <h1 class="logo">JOSEPH</h1>
+        <h1 class="logo"><span>JOSEPH</span></h1>
     </div><!--main-->
 
 <?php
@@ -12,3 +12,5 @@ $navParams = array(
 
 wp_nav_menu( $navParams ); ?>
 </header>
+
+<div class="container">

@@ -10,7 +10,7 @@
 		<meta http-equiv="cleartype" content="on">
 
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-		
+
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
 		<!-- <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/img/l/apple-touch-icon-precomposed.png"> -->
 		<!-- <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/img/m/apple-touch-icon-72x72-precomposed.png"> -->
@@ -29,6 +29,8 @@
 		<!-- Windows 8 / RT -->
 		<!-- <meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/img/h/apple-touch-icon-144x144-precomposed.png"> -->
 		<!-- <meta name="msapplication-TileColor" content="#000"> -->
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
 
 		<?php wp_head(); ?>
 	</head>

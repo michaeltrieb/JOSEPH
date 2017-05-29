@@ -24,6 +24,100 @@ CONTENTS:
 
 @import "css/reset.css";
 
+/*	12 COLUMN : RESPONSIVE GRID SYSTEM
+	DEVELOPER : DENIS LEBLANC
+	URL : http://responsive.gs
+	VERSION : 3.0
+	LICENSE : GPL & MIT */
+
+
+/* 	SET ALL ELEMENTS TO BOX-SIZING : BORDER-BOX */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	*behavior: url(/scripts/boxsizing.htc);
+	/*	If you need support for IE7 and lower make
+		sure the boxsizing.htc file is linked properly.
+		More info here:  https://github.com/Schepp/box-sizing-polyfill */
+}
+
+
+/*	MAIN CONTAINER
+	Set the width to whatever you want the width of your site to be. */
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/*	SELF CLEARING FLOATS - CLEARFIX METHOD */
+.container:after,
+.row:after,
+.col:after,
+.clr:after,
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* 	DEFAULT ROW STYLES
+	Set bottom padding according to preference */
+.row { padding-bottom: 0em;
+}
+
+
+/* DEFAULT COLUMN STYLES */
+.col {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+@media ( min-width : 768px ) {
+
+	.gutters .col {
+		margin-left: 2%;
+	}
+
+	.gutters .col:first-child {
+		margin-left: 0;
+	}
+}
+
+
+
+
+/*	COLUMN WIDTH ON DISPLAYS +768px
+	You might need to play with media queries here to suite your design. */
+@media ( min-width : 768px ) {
+	.span_1 { width: 8.33333333333%; }
+	.span_2 { width: 16.6666666667%; }
+	.span_3 { width: 25%; }
+	.span_4 { width: 33.3333333333%; }
+	.span_5 { width: 41.6666666667%; }
+	.span_6 { width: 50%; }
+	.span_7 { width: 58.3333333333%; }
+	.span_8 { width: 66.6666666667%; }
+	.span_9 { width: 75%; }
+	.span_10 { width: 83.3333333333%; }
+	.span_11 { width: 91.6666666667%; }
+	.span_12 { width: 100%; }
+
+	.gutters .span_1 { width: 6.5%; }
+	.gutters .span_2 { width: 15.0%; }
+	.gutters .span_3 { width: 23.5%; }
+	.gutters .span_4 { width: 32.0%; }
+	.gutters .span_5 { width: 40.5%; }
+	.gutters .span_6 { width: 49.0%; }
+	.gutters .span_7 { width: 57.5%; }
+	.gutters .span_8 { width: 66.0%; }
+	.gutters .span_9 { width: 74.5%; }
+	.gutters .span_10 { width: 83.0%; }
+	.gutters .span_11 { width: 91.5%; }
+	.gutters .span_12 { width: 100%; }
+}
+
 div,
 article,
 section,
@@ -61,6 +155,38 @@ h4,
 h5,
 h6 					{ font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */ }
 
+
+
+html {font-size: 1em;}
+
+body {
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 6.854em;
+}
+
+h2 {font-size: 4.236em;}
+
+h3 {font-size: 2.618em;}
+
+h4 {font-size: 1.618em;}
+
+small, .font_small {font-size: 0.618em;}
+
+
+
 /* ----------------------------------------------------------------------------------------------------------
 03 Media queries (using a mobile-first approach) ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
@@ -82,26 +208,30 @@ h6 					{ font-weight:bold; /* This helps to identify headings at the initial bu
 
 
 h1.logo {
-    color: rgba(255,250,0, 0.9);
+    color: rgba(10,10,0, 0.9);
     margin: 0 auto;
     padding: .3em 0;
     text-align: center;
     font-family: 'Hind', sans-serif;
-    text-shadow: 5px 12px rgba(255,0,255,0.6), -3px -16px rgba(0,255,255, 0.6);
+    text-shadow: 5px 12px rgba(255,0,255,0.6), -3px -16px rgba(0,255,255, 0.8);
     font-size: 8em;
     /*-webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #000;*/
 
+}
+h1.logo span {
+	background: #ff0;
 }
 header {
     background: #fff;
     margin-bottom: 5em;
 }
 body {
-    background: url("i/pinkdust.png") repeat #333;
+    background: url("i/black_twill.png") repeat #333;
     margin: 0;
     padding: 0;
 	color: #eee;
+	font-family: 'Inconsolata', monospace;
 }
 .container {
 	width: 800px;
