@@ -1,6 +1,7 @@
 <header>
     <div id="main">
         <h1 class="logo"><span>JOSEPH</span></h1>
+        <h6 class="tagline">Coffee and music. Est. 2017</h6>
     </div><!--main-->
 
 <?php

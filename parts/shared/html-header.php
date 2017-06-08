@@ -30,6 +30,8 @@
 		<!-- <meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/img/h/apple-touch-icon-144x144-precomposed.png"> -->
 		<!-- <meta name="msapplication-TileColor" content="#000"> -->
 		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Rajdhani:300" rel="stylesheet">
+
 
 
 		<?php wp_head(); ?>

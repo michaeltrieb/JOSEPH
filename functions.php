@@ -25,6 +25,28 @@
 
 	======================================================================================================================== */
 
+	
+	/**
+	 * Register our sidebars and widgetized areas.
+	 *
+	 */
+	function arphabet_widgets_init() {
+
+		register_sidebar( array(
+			'name'          => 'Home right sidebar',
+			'id'            => 'home_right_1',
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="rounded">',
+			'after_title'   => '</h2>',
+		) );
+
+	}
+	add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+
+
+
 
 	// Registers menu nav
 
@@ -34,6 +56,13 @@
 	add_action( 'init', 'register_my_menu' );
 
 	add_theme_support('post-thumbnails');
+
+	// Registers mobile menu
+
+	function extra_setup() {
+		register_nav_menu ('primary mobile', __( 'Navigation Mobile', 'Starkers' ));
+	}
+	add_action( 'after_setup_theme', 'extra_setup' );
 
 	// register_nav_menus(array('primary' => 'Primary Navigation'));
 
@@ -77,6 +106,7 @@
 		wp_register_style( 'screen', get_stylesheet_directory_uri().'/style.css', '', '', 'screen' );
         wp_enqueue_style( 'screen' );
 	}
+
 
 	/* ========================================================================================================================
 

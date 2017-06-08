@@ -7,6 +7,25 @@
 
 <!-- Google Maps API Key: AIzaSyCntrEQQu7o_mmL4uN9heTGLZEKwVF8kU8 -->
 
+<div class="container">
+    <div class="row">
+
+
+    <div class="col span_4">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/i/avery.JPG" alt="" id="aboutimg">
+    </div>
+
+    <div class="col span_8">
+        <p class="pagepara">
+            It's about time someone shook shit up! We are here now, all of us, to make
+            your coffee dreams come true. And to let music capture your golden soul.
+        </p>
+    </div>
+    </div>
+
+</div>
+<hr>
+
 <div id="map">
     <iframe
       width="700"
