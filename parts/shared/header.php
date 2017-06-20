@@ -8,11 +8,11 @@
 $navParams = array(
 	'theme_location' 	=> 'header-menu',
  	'container'     	=> '',
-	'items_wrap'		=> '<nav class="topnav" id="topnav">
-                            <ul>%3$s</ul></nav>
-                            <a href="javascript:void(0);"
+	'items_wrap'		=> '<nav class="topnav responsive" id="topnav">
+                            <ul>%3$s</ul><a href="javascript:void(0);"
                             style="font-size:15px;" class="icon"
-                            onclick="myFunction()">&#9776;</a>'
+                            onclick="myFunction()">&#9776;</a></nav>
+                            '
 );
 
 wp_nav_menu( $navParams ); ?>

@@ -12,11 +12,12 @@
 
 
     <div class="col span_4">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/i/avery.JPG" alt="" id="aboutimg">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/i/abi.JPG" alt="" id="aboutimg">
     </div>
 
-    <div class="col span_8">
+    <div class="col span_8 gutters">
         <p class="pagepara">
+            <h2>Who</h1>
             It's about time someone shook shit up! We are here now, all of us, to make
             your coffee dreams come true. And to let music capture your golden soul.
         </p>
@@ -26,7 +27,7 @@
 </div>
 <hr>
 
-<div id="map">
+<div class="map-responsive">
     <iframe
       width="700"
       height="350"

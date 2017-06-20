@@ -12,6 +12,9 @@
         <p><b>Mon:</b> Closed</p>
         <p><b>Tues-Thurs:</b> 7am-7pm</p>
         <p><b>Fri-Sun:</b> 7am-10pm</p>
+        <h3>LOCATION</h3>
+        <br>
+        <p>6225 Delmar | STL MO | 636 222 0490</p>
     </div><!--col span_3-->
     <div class="col span_6">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/i/avery.JPG" alt="">
@@ -22,6 +25,7 @@
         <br>
         <?php dynamic_sidebar( 'home_right_1' ); ?>
         <?php endif; ?>
+        <a href="http://www.twitter.com/JOSEPHCOFFEEE">@JOSEPHCOFFEEE</a>
     </div><!--col span_3-->
 
 </div><!--container row-->
