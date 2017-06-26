@@ -8,20 +8,29 @@
 <!-- Google Maps API Key: AIzaSyCntrEQQu7o_mmL4uN9heTGLZEKwVF8kU8 -->
 
 <div class="container">
-    <div class="row">
+    <div class="row gutters">
+        
+        <div class="col span_4">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/i/abi.JPG" alt="" id="aboutimg">
+        </div>
 
-
-    <div class="col span_4">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/i/abi.JPG" alt="" id="aboutimg">
-    </div>
-
-    <div class="col span_8 gutters">
-        <p class="pagepara">
-            <h2>Who</h1>
-            It's about time someone shook shit up! We are here now, all of us, to make
-            your coffee dreams come true. And to let music capture your golden soul.
-        </p>
-    </div>
+        <div class="col span_8">
+            <div class="about-info">
+                <div class="who">
+                    <h2>Who</h2>
+                    <p>Joseph is a coffee shop/venue space founded in 2017.
+                        There was an obvious need for inexpensive coffee served with a
+                        sense of dignity and class, while also providing an outlet for
+                        the burgeoning local music scene.
+                        Diner coffee in a third wave atmosphere. That's our mantra.
+                    </p>
+                </div>
+                <div class="why">
+                    <h2>Why</h2>
+                    <p>You need a place to get work done without an air of pretension breathing down your millenial neck.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>

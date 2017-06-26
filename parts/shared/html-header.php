@@ -11,6 +11,9 @@
 
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
+		<!-- Social Media Icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
 		<!-- <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/img/l/apple-touch-icon-precomposed.png"> -->
 		<!-- <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/img/m/apple-touch-icon-72x72-precomposed.png"> -->
@@ -31,8 +34,7 @@
 		<!-- <meta name="msapplication-TileColor" content="#000"> -->
 		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Rajdhani:300" rel="stylesheet">
-
-
+		
 
 		<?php wp_head(); ?>
 	</head>
